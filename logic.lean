@@ -41,19 +41,21 @@ theorem disj_comm :
 
 begin
   intro pq, -- Ganhamos P V Q como dado, nosso alvo é Q V P --
-  left, -- Trazemos P e nosso alvo vira Q -- 
-  by_contradiction pq,
-  
-  
-
-
+  cases pq with hp hq, --Separamos em dois --
+  right, -- chame a da direita --
+  exact hp, -- Portanto é hp --
+  left, -- chame a da esquerca --
+  exact hq, -- retorne que é hq -- 
 
 end
 
 theorem conj_comm :
   (P ∧ Q) → (Q ∧ P)  :=
 begin
-  sorry,
+  
+  
+  
+
 end
 
 
