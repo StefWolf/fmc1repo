@@ -14,10 +14,11 @@
 
 - [x] Tutorial
 - [x] Addition
-- [] Multiplication 6/9
+- [x] Multiplication 
+- [ ] Power
 - [x] Function
-- [] Proposition
-- [] Advanced-proposition
-- [] Advanced-addition
-- [] Advance-multiplication
-- [] Inequality
+- [x] Proposition
+- [ ] Advanced-proposition
+- [ ] Advanced-addition
+- [ ] Advance-multiplication
+- [ ] Inequality
