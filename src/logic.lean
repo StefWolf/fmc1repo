@@ -20,7 +20,7 @@ end
 theorem doubleneg_elim :
   ¬¬P → P  :=
 begin
-  intro hpf,
+  intro pf,
   
 end
 
