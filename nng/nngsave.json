@@ -221,43 +221,53 @@
     },
     {
       "lean": "example (P Q : Prop) (p : P) (q : Q) : P ∧ Q :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "split,\r\nexact p,\r\nexact q,"
     },
     {
       "lean": "lemma and_symm (P Q : Prop) : P ∧ Q → Q ∧ P :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro h,\r\ncases h with p q,\r\nsplit,\r\nexact q,\r\nexact p,"
     },
     {
       "lean": "lemma and_trans (P Q R : Prop) : P ∧ Q → Q ∧ R → P ∧ R :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro pq,\r\ncases pq with p q,\r\nintro qr,\r\ncases qr with q r,\r\nsplit,\r\nexact p,\r\nexact r,"
     },
     {
       "lean": "lemma iff_trans (P Q R : Prop) : (P ↔ Q) → (Q ↔ R) → (P ↔ R) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro pq_qp, --pq\r\ncases pq_qp with one two, --qr pr\r\nintro qr, --qr\r\ncases qr with q r,\r\nsplit,\r\nintro p,\r\napply q,\r\napply one,\r\nexact p,\r\nintro r_two,\r\napply two,\r\napply r,\r\nexact r_two,\r\n"
     },
     {
       "lean": "lemma iff_trans (P Q R : Prop) : (P ↔ Q) → (Q ↔ R) → (P ↔ R) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro pq_qp, --pq\r\ncases pq_qp with one two, --qr pr\r\nintro qr, --qr\r\ncases qr with q r,\r\nsplit,\r\nintro p,\r\napply q,\r\napply one,\r\nexact p,\r\nintro r_two,\r\napply two,\r\napply r,\r\nexact r_two,\r\n"
     },
     {
       "lean": "example (P Q : Prop) : Q → (P ∨ Q) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro q,\r\nright,\r\nexact q,\r\n"
     },
     {
       "lean": "lemma or_symm (P Q : Prop) : P ∨ Q → Q ∨ P :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro pq,\r\ncases pq with hp hq,\r\nright,\r\nexact hp,\r\nleft,\r\nexact hq,"
     },
     {
       "lean": "lemma and_or_distrib_left (P Q R : Prop) : P ∧ (Q ∨ R) ↔ (P ∧ Q) ∨ (P ∧ R) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "split,\r\nintro p_q_r,\r\ncases p_q_r with p q_r,\r\ncases q_r with q r,\r\nleft, --esq\r\nsplit, --divid\r\nexact p, --isso aqui\r\nexact q, --isso aqui\r\nright, --dir\r\nsplit, --divid\r\nexact p, --isso aqui\r\nexact r, --isso aqui\r\nintro p_qvp_r, --crie h\r\ncases p_qvp_r with p_e_q p_e_r, --divide o h em dois\r\ncases p_e_q with p q, --divide o a em dois\r\nsplit, --divide\r\nexact p, --isso aqui\r\nleft, --esquerda\r\nexact q, --isso aqui\r\ncases p_e_r with p r, --divide em dois\r\nsplit, --divide\r\nexact p, --isso aqui\r\nright, --direita\r\nexact r, --isso aqui"
     },
     {
       "lean": "lemma contra (P Q : Prop) : (P ∧ ¬ P) → Q :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intro p_falsep,\r\ncases p_falsep with p falsep,\r\nexfalso,\r\napply falsep,\r\nexact p,\r\n"
     },
     {
       "lean": "lemma contrapositive2 (P Q : Prop) : (¬ Q → ¬ P) → (P → Q) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "by_cases p : P ; by_cases q : Q,\r\nrepeat {cc},"
     },
     {
       "lean": "theorem succ_inj' {a b : mynat} (hs : succ(a) = succ(b)) :  a = b := \n",

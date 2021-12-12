@@ -18,7 +18,7 @@
 - [ ] Power
 - [x] Function
 - [x] Proposition
-- [ ] Advanced-proposition
+- [x] Advanced-proposition
 - [ ] Advanced-addition
 - [ ] Advance-multiplication
 - [ ] Inequality

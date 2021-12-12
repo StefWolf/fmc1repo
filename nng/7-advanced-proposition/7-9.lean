@@ -1,0 +1,5 @@
+intro p_falsep,
+cases p_falsep with p falsep,
+exfalso,
+apply falsep,
+exact p,
