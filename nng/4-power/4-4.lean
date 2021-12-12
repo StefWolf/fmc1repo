@@ -1,0 +1,6 @@
+induction m with a b,
+rw pow_zero,
+refl,
+rw pow_succ,
+rw mul_one,
+exact b,

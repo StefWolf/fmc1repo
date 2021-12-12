@@ -15,7 +15,7 @@
 - [x] Tutorial
 - [x] Addition
 - [x] Multiplication 
-- [ ] Power
+- [x] Power
 - [x] Function
 - [x] Proposition
 - [x] Advanced-proposition
