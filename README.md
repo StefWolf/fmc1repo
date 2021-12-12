@@ -13,6 +13,7 @@
 - [x] theorem weaken_disj_left
 - [x] theorem weaken_conj_right
 - [x] theorem weaken_conj_left
+- [x] theorem conj_idempot
 
 ... Futuro fluido 
 
