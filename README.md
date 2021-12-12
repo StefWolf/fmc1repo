@@ -8,6 +8,8 @@
 - [ ] theorem impl_as_disj_converse
 - [ ] theorem disj_as_impl
 
+- [x] theorem impl_refl
+
 ... Futuro fluido 
 
 # NNG - Natural Number Game
