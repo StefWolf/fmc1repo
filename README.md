@@ -9,6 +9,7 @@
 - [ ] theorem disj_as_impl
 
 - [x] theorem impl_refl
+- [x] theorem weaken_disj_right
 
 ... Futuro fluido 
 
