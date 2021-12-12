@@ -274,7 +274,16 @@ end
 theorem disj_idemp :
   (P∨P) ↔ P  :=
 begin
-  sorry,
+  split,
+  intro pp1,
+  cases pp1 with p1 p2,
+  exact p1,
+  exact p2,
+  intro p,
+  right,
+  exact p,
+
+
 end
 
 end propositional
