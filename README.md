@@ -11,6 +11,7 @@
 - [x] theorem impl_refl
 - [x] theorem weaken_disj_right
 - [x] theorem weaken_disj_left
+- [x] theorem weaken_conj_right
 
 ... Futuro fluido 
 
