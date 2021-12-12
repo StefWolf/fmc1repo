@@ -52,7 +52,11 @@ end
 theorem conj_comm :
   (P ∧ Q) → (Q ∧ P)  :=
 begin
-  
+  intro pq,
+  cases pq with p q,
+  split,
+  exact q,
+  exact p,
   
   
 
