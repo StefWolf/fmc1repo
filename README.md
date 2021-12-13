@@ -19,6 +19,7 @@
 - [x] theorem distr_conj_disj
 - [x] theorem distr_conj_disj_converse
 - [x] theorem lem_irrefutable
+- [x] theorem impl_as_contrapositive
 
 ... Futuro fluido 
 
