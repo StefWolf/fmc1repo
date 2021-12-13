@@ -172,7 +172,15 @@ end
 theorem distr_conj_disj :
   P∧(Q∨R) → (P∧Q)∨(P∧R)  :=
 begin
-  sorry,
+  intro h,
+  cases h with p qr,
+  left,
+  split,
+  exact p,
+  cases qr with q t,
+  exact q,
+  
+
 end
 
 theorem distr_conj_disj_converse :
@@ -207,7 +215,13 @@ end
 theorem uncurry_prop :
   (P→(Q→R)) → ((P∧Q)→R)  :=
 begin
-  sorry,
+  intro h1,
+  intro h_pq,
+  apply h1,
+  cases h_pq with p q,
+  exact p,
+  cases h_pq with p q,
+  exact q,
 end
 
 
@@ -387,7 +401,7 @@ end
 theorem exists_conj_as_conj_exists :
   (∃x, P x ∧ Q x) → (∃x, P x) ∧ (∃x, Q x)  :=
 begin
-  sorry,
+  intro x,
 end
 
 theorem exists_disj_as_disj_exists :

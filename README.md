@@ -15,6 +15,7 @@
 - [x] theorem weaken_conj_left
 - [x] theorem conj_idempot
 - [x] theorem disj_idemp
+- [x] theorem uncurry_prop
 
 ... Futuro fluido 
 
