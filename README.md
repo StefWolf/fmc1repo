@@ -21,6 +21,7 @@
 - [x] theorem lem_irrefutable
 - [x] theorem impl_as_contrapositive
 - [x] theorem impl_as_contrapositive_converse
+- [x] theorem contrapositive_law
 
 ... Futuro fluido 
 

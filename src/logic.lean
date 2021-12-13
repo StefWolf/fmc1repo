@@ -116,14 +116,16 @@ begin
   exfalso,
   have new_q := h1 h_q, --Opa! -q e -p estão no mesmo barco
   contradiction,
-  
+
 
 end
 
 theorem contrapositive_law :
   (P → Q) ↔ (¬Q → ¬P)  :=
 begin
-  sorry,
+  split,
+  apply impl_as_contrapositive,
+  apply impl_as_contrapositive_converse,
 end
 
 
