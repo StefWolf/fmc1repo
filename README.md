@@ -22,6 +22,7 @@
 - [x] theorem impl_as_contrapositive
 - [x] theorem impl_as_contrapositive_converse
 - [x] theorem contrapositive_law
+- [x] theorem distr_disj_conj_converse
 
 ... Futuro fluido 
 
