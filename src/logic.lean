@@ -200,7 +200,19 @@ end
 theorem demorgan_ndisj :
   ¬(P∨Q) → (¬P ∧ ¬Q)  :=
 begin
-  sorry,
+  intro h1,
+  split,
+  intro h_p,
+  have h1 : P ∨ Q,
+  left,
+  exact h_p,
+  contradiction,
+  intro h_q,
+  have h1 : P ∨ Q,
+  right,
+  exact h_q,
+  contradiction,
+  
 end
 
 theorem demorgan_ndisj_converse :

@@ -26,6 +26,7 @@
 - [x] theorem peirce_law_weak
 - [x] theorem disj_as_negconj
 - [x] theorem conj_as_negdisj
+- [x] theorem demorgan_ndisj
 
 ... Futuro fluido 
 
