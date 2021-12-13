@@ -289,6 +289,13 @@ begin
   cases h1 with h_p h_qr,
   left,
   exact h_p,
+  cases h_qr with q r,
+  right,
+  exact q,
+  cases h1 with h_p h_qr,
+  left,
+  exact h_p,
+  cc,
 end
 
 theorem distr_disj_conj_converse :
