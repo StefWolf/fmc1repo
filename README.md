@@ -7,7 +7,6 @@
 - [x] theorem conj_comm
 - [ ] theorem impl_as_disj_converse
 - [ ] theorem disj_as_impl
-
 - [x] theorem impl_refl
 - [x] theorem weaken_disj_right
 - [x] theorem weaken_disj_left
@@ -19,6 +18,7 @@
 - [x] theorem curry_prop
 - [x] theorem distr_conj_disj
 - [x] theorem distr_conj_disj_converse
+- [x] theorem lem_irrefutable
 
 ... Futuro fluido 
 

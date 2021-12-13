@@ -110,7 +110,14 @@ end
 theorem lem_irrefutable :
   ¬¬(P∨¬P)  :=
 begin
-  sorry,
+  intro h1,
+  apply h1,
+  right,
+  intro p,
+  have h1p : P ∨ ¬P,
+  left,
+  exact p,
+  contradiction,
 end
 
 
@@ -210,7 +217,11 @@ end
 theorem distr_disj_conj :
   P∨(Q∧R) → (P∨Q)∧(P∨R)  :=
 begin
-  sorry,
+  intro h1,
+  split,
+  cases h1 with h_p h_qr,
+  left,
+  exact h_p,
 end
 
 theorem distr_disj_conj_converse :
