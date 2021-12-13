@@ -6,7 +6,7 @@
 - [x] theorem disj_comm
 - [x] theorem conj_comm
 - [x] theorem impl_as_disj_converse
-- [ ] theorem disj_as_impl
+- [x] theorem disj_as_impl
 - [x] theorem impl_refl
 - [x] theorem weaken_disj_right
 - [x] theorem weaken_disj_left
