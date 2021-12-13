@@ -109,7 +109,15 @@ end
 theorem impl_as_contrapositive_converse :
   (¬Q → ¬P) → (P → Q)  :=
 begin
-  sorry,
+  intro h1,
+  intro h_p,
+  by_cases h_q : Q, --Caso sim e caso não
+  exact h_q,
+  exfalso,
+  have new_q := h1 h_q, --Opa! -q e -p estão no mesmo barco
+  contradiction,
+  
+
 end
 
 theorem contrapositive_law :
