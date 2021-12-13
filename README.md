@@ -5,7 +5,7 @@
 - [x] theorem doubleneg_law
 - [x] theorem disj_comm
 - [x] theorem conj_comm
-- [ ] theorem impl_as_disj_converse
+- [x] theorem impl_as_disj_converse
 - [ ] theorem disj_as_impl
 - [x] theorem impl_refl
 - [x] theorem weaken_disj_right
