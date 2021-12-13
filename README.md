@@ -17,6 +17,7 @@
 - [x] theorem disj_idemp
 - [x] theorem uncurry_prop
 - [x] theorem curry_prop
+- [x] theorem distr_conj_disj
 
 ... Futuro fluido 
 
