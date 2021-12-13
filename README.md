@@ -27,6 +27,7 @@
 - [x] theorem disj_as_negconj
 - [x] theorem conj_as_negdisj
 - [x] theorem demorgan_ndisj
+- [x] theorem demorgan_ndisj_converse
 
 ... Futuro fluido 
 
