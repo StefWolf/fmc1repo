@@ -20,7 +20,11 @@ end
 theorem doubleneg_elim :
   ¬¬P → P  :=
 begin
-  intro pf,
+  intro h1,
+  by_cases p : P, -- pegando P e partindo em dois positivo e negativo
+  exact p,
+  contradiction, -- Opa! temos uma contradição :p
+  
   
 end
 

@@ -1,7 +1,7 @@
 # LEAN
 
 - [x] theorem doubleneg_intro 
-- [ ] theorem doubleneg_elim 
+- [x] theorem doubleneg_elim 
 - [x] theorem doubleneg_law
 - [x] theorem disj_comm
 - [x] theorem conj_comm
