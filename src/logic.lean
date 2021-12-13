@@ -228,7 +228,14 @@ end
 theorem demorgan_nconj_converse :
   (¬Q ∨ ¬P) → ¬(P∧Q)  :=
 begin
-  sorry,
+  intro h1,
+  intro h2,
+  cases h1 with h_np h_nq,
+  cases h2 with p q,
+  contradiction,
+  cases h2 with p q,
+  contradiction,
+  
 end
 
 
