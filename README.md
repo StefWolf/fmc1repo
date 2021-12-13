@@ -24,6 +24,7 @@
 - [x] theorem contrapositive_law
 - [x] theorem distr_disj_conj_converse
 - [x] theorem peirce_law_weak
+- [x] theorem disj_as_negconj
 
 ... Futuro fluido 
 

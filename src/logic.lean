@@ -173,7 +173,12 @@ end
 theorem disj_as_negconj :
   P∨Q → ¬(¬P∧¬Q)  :=
 begin
-  sorry,
+  intros h1 h2,
+  cases h2 with h_p h_q,
+  cases h1,
+  contradiction,
+  contradiction,
+  
 end
 
 theorem conj_as_negdisj :
