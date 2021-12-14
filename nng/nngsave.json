@@ -344,19 +344,22 @@
     },
     {
       "lean": "theorem mul_pos (a b : mynat) : a ≠ 0 → b ≠ 0 → a * b ≠ 0 :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intros h1 h2 h3,\r\ncases b with n,\r\nrw mul_zero at h3,\r\nhave h4 := h2(h3),\r\nexact h4,\r\nrw mul_succ a n at h3, --escolho demonstrar o h3\r\nhave h4 := add_left_eq_zero(h3),\r\nexact h1(h4), -- h1 mostra que são diferentes e h4 mostra que são iguais, então, falso né!?"
     },
     {
       "lean": "theorem eq_zero_or_eq_zero_of_mul_eq_zero (a b : mynat) (h : a * b = 0) :\n  a = 0 ∨ b = 0 :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "cases b,\r\nright,\r\nrefl,\r\nrw mul_succ at h,\r\nhave h2 := add_left_eq_zero(h),\r\nleft,\r\nexact h2,\r\n"
     },
     {
       "lean": "theorem mul_eq_zero_iff (a b : mynat): a * b = 0 ↔ a = 0 ∨ b = 0 :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "split,\r\n-- a * b = 0 --\r\napply eq_zero_or_eq_zero_of_mul_eq_zero,\r\nintro h1,\r\ncases h1, -- divide o left e right\r\nrw h1,\r\nrw zero_mul,\r\nrefl,\r\nrw h1,\r\nrw mul_zero,\r\nrefl,"
     },
     {
       "lean": "theorem mul_left_cancel (a b c : mynat) (ha : a ≠ 0) : a * b = a * c → b = c :=\n",
-      "editorText": "sorry"
+      "editorText": ""
     },
     {
       "lean": "lemma one_add_le_self (x : mynat) : x ≤ 1 + x :=\n",
