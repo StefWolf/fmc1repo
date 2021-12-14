@@ -45,5 +45,5 @@
 - [x] Proposition
 - [x] Advanced-proposition
 - [x] Advanced-addition
-- [ ] Advance-multiplication
+- [ ] Advance-multiplication 3/4
 - [ ] Inequality

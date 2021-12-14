@@ -441,7 +441,7 @@ variables P Q : U -> Prop
 theorem demorgan_exists_neg :
   (∃x, ¬P x) → ¬(∀x, P x)  :=
 begin
-  sorry,
+  intro w,
 end
 
 theorem demorgan_neg_exists :
