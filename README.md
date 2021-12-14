@@ -44,6 +44,6 @@
 - [x] Function
 - [x] Proposition
 - [x] Advanced-proposition
-- [ ] Advanced-addition
+- [x] Advanced-addition
 - [ ] Advance-multiplication
 - [ ] Inequality

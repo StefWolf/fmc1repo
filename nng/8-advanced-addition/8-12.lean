@@ -1,0 +1,5 @@
+rw add_comm,
+rw one_eq_succ_zero,
+rw succ_add,
+rw zero_add,
+refl,

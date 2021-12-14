@@ -1,0 +1,5 @@
+split,
+exact add_right_cancel a t b,
+intro h1,
+rw h1, 
+refl,
