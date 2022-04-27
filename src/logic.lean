@@ -441,13 +441,19 @@ variables P Q : U -> Prop
 theorem demorgan_exists_neg :
   (∃x, ¬P x) → ¬(∀x, P x)  :=
 begin
-  intro w,
+  
 end
 
 theorem demorgan_neg_exists :
   ¬(∃x, P x) → (∀x, ¬P x)  :=
 begin
-  sorry,
+  intro exits,
+  intro u,
+  intro pb,
+  apply exits, --Ficou falso então... o que na nossa prop é falso tbm :p
+  existsi u,
+  exact pb,
+
 end
 
 theorem demorgan_forall_neg :
