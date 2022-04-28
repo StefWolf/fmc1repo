@@ -445,7 +445,7 @@ begin
   cases exits with x h_not_P,
   intro all,
   apply h_not_P,
-  have Pu: P x := all x,
+  have Pu: P x := all x,--no fim
   --Olha eu tenho P x no para todo x e ele será minha hipotese Pu
   exact Pu,
 end
@@ -467,6 +467,9 @@ theorem demorgan_forall_neg :
 begin
   intro all,
   intro exist,
+  cases exist with x exist_x, 
+  have hneg := all  x, --pegue o -p no all (ai sera minha hipotese hneg)
+  contradiction, -- :p
   
   
 end
@@ -476,7 +479,7 @@ theorem demorgan_neg_forall :
 begin
  intro all,
  by_contra ne,
- apply all,
+ apply ne,
 end
 
 theorem demorgan_exists_law :
