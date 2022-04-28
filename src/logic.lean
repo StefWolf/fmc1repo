@@ -10,10 +10,10 @@ variables P Q R : Prop
 theorem doubleneg_intro :
   P → ¬¬P  :=
 begin
-   intro p, -- chamando um novo p --
-   intro q, --chamando um q que será meu -p --
-   apply q, -- Opa! agora ele se converteu para p --
-   exact p, -- Aqui está, se -p então p que é --p --
+   intro p, 
+   intro q, 
+   apply q, 
+   exact p, 
   
 end
 
@@ -586,7 +586,22 @@ end
 theorem exists_conj_as_conj_exists :
   (∃x, P x ∧ Q x) → (∃x, P x) ∧ (∃x, Q x)  :=
 begin
-  intro x,
+  --intro exist_one_disj,
+  --split,
+  --cases exist_one_disj with x,
+  --existsi x,
+
+  intro exist_one_disj,
+  cases exist_one_disj with xu px_and_qx,
+  cases px_and_qx with px qx,
+  split,
+  existsi xu,
+  exact px,
+  existsi xu,
+  exact qx,
+  
+  
+  
 end
 
 theorem exists_disj_as_disj_exists :
