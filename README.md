@@ -39,6 +39,7 @@
 - [x] theorem exists_as_neg_forall
 - [x] theorem forall_as_neg_exists
 - [x] theorem forall_as_neg_exists_converse
+- [x] theorem exists_as_neg_forall_converse
 
 
 
