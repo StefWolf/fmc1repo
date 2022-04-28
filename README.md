@@ -43,6 +43,7 @@
 - [x] theorem exists_as_neg_forall_converse
 - [x] theorem exists_as_neg_forall_law
 - [x] theorem exists_conj_as_conj_exists
+- [x] theorem exists_disj_as_disj_exists
 
 
 
