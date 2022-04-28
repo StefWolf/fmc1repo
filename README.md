@@ -47,6 +47,7 @@
 - [x] theorem exists_disj_as_disj_exists_converse
 = [x] theorem forall_conj_as_conj_forall
 - [x] theorem forall_conj_as_conj_forall_converse
+- [x] theorem forall_disj_as_disj_forall_converse
 
 
 
