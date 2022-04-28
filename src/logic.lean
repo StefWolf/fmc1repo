@@ -441,7 +441,13 @@ variables P Q : U -> Prop
 theorem demorgan_exists_neg :
   (∃x, ¬P x) → ¬(∀x, P x)  :=
 begin
-  
+  intro exits,
+  cases exits with x h_not_P,
+  intro all,
+  apply h_not_P,
+  have Pu: P x := all x,
+  --Olha eu tenho P x no para todo x e ele será minha hipotese Pu
+  exact Pu,
 end
 
 theorem demorgan_neg_exists :
@@ -459,13 +465,18 @@ end
 theorem demorgan_forall_neg :
   (∀x, ¬P x) → ¬(∃x, P x)  :=
 begin
-  sorry,
+  intro all,
+  intro exist,
+  
+  
 end
 
 theorem demorgan_neg_forall :
   ¬(∀x, P x) → (∃x, ¬P x)  :=
 begin
-  sorry,
+ intro all,
+ by_contra ne,
+ apply all,
 end
 
 theorem demorgan_exists_law :
@@ -477,7 +488,10 @@ end
 theorem demorgan_forall_law :
   (∀x, ¬P x) ↔ ¬(∃x, P x)  :=
 begin
-  sorry,
+  split,
+  intro all,
+  intro exist,
+  apply all,
 end
 
 
