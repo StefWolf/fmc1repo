@@ -37,6 +37,7 @@
 - [x] theorem demorgan_exists_law
 - [x] theorem demorgan_forall_law
 - [x] theorem exists_as_neg_forall
+- [x] theorem forall_as_neg_exists
 
 
 
