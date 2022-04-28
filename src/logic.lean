@@ -487,22 +487,23 @@ begin
  intro prop_u,
  apply no_u,
  exact prop_u,
- 
+
 end
 
 theorem demorgan_exists_law :
   (∃x, ¬P x) ↔ ¬(∀x, P x)  :=
 begin
-  sorry,
+  split,
+  apply demorgan_exists_neg,
+  apply demorgan_neg_forall,
 end
 
 theorem demorgan_forall_law :
   (∀x, ¬P x) ↔ ¬(∃x, P x)  :=
 begin
   split,
-  intro all,
-  intro exist,
-  apply all,
+  apply demorgan_forall_neg,
+  apply demorgan_neg_exists,
 end
 
 

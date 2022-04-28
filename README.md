@@ -33,7 +33,9 @@
 - [x] theorem demorgan_exists_neg
 - [x] theorem demorgan_neg_exists
 = [x] theorem demorgan_forall_neg
-- [x] theorem demorgan_neg_forall :
+- [x] theorem demorgan_neg_forall 
+- [x] theorem demorgan_exists_law
+- [x] theorem demorgan_forall_law
 
 
 
