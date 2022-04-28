@@ -30,6 +30,11 @@
 - [x] theorem demorgan_ndisj_converse
 - [x] theorem demorgan_nconj_converse
 - [x] theorem distr_disj_conj
+- [x] theorem demorgan_exists_neg
+- [x] theorem demorgan_neg_exists
+= [x] theorem demorgan_forall_neg
+- [x] theorem demorgan_neg_forall :
+
 
 
 

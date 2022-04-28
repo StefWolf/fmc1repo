@@ -479,7 +479,15 @@ theorem demorgan_neg_forall :
 begin
  intro all,
  by_contra ne,
- apply ne,
+ apply all, --blz peguei o all sem neg,
+ intro u,
+ by_contra no_u,
+ apply ne, --hehehe peguei o exist
+ existsi u,
+ intro prop_u,
+ apply no_u,
+ exact prop_u,
+ 
 end
 
 theorem demorgan_exists_law :
