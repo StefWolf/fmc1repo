@@ -1,8 +1,0 @@
-induction b with n hb,
-rw add_zero,
-rw add_zero,
-refl,
-rw add_succ,
-rw add_succ,
-rw hb,
-refl,

@@ -1,6 +1,0 @@
-intros f h p,
-have j : Q -> R := f p,
-apply f,
-apply p,
-apply h,
-exact p,

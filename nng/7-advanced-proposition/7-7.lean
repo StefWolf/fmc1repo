@@ -1,6 +1,0 @@
-intro pq,
-cases pq with hp hq,
-right,
-exact hp,
-left,
-exact hq,

@@ -1,1 +1,0 @@
-exact succ_inj(hs), --Exatamente sucessor ab

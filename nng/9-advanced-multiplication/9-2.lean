@@ -1,7 +1,0 @@
-cases b,
-right,
-refl,
-rw mul_succ at h,
-have h2 := add_left_eq_zero(h),
-left,
-exact h2,

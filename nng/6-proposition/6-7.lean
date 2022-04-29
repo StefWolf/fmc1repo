@@ -1,6 +1,0 @@
-intro hpq,
-intro hqr,
-intro p,
-apply hqr,
-apply hpq,
-exact p,

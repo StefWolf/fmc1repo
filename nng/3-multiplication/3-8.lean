@@ -1,8 +1,0 @@
-induction b with n bn,
-rw mul_zero,
-rw zero_mul,
-refl,
-rw mul_succ,
-rw succ_mul,
-rw bn,
-refl,

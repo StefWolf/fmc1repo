@@ -1,7 +1,0 @@
-intro pq,
-cases pq with p q,
-intro qr,
-cases qr with q r,
-split,
-exact p,
-exact r,
