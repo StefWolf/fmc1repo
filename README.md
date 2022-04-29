@@ -51,15 +51,3 @@
 
 GAME OVER
 
-# NNG - Natural Number Game
-
-- [x] Tutorial
-- [x] Addition
-- [x] Multiplication 
-- [x] Power
-- [x] Function
-- [x] Proposition
-- [x] Advanced-proposition
-- [x] Advanced-addition
-- [ ] Advance-multiplication 3/4
-- [ ] Inequality
